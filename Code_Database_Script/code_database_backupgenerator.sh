@@ -1,4 +1,98 @@
 #!/bin/bash
+# =============================================================================
+# Script Name:     code_database_backupgenerator.sh
+# Author:          Terukula Sai (DevOps Engineer)
+# Created On:      Oct 6, 2025
+# Last Modified:   Oct 9, 2025
+# Version:         v1.0
+# Email:           codesai127.0.0.1@gmail.com
+# Usage:           ./code_database_backupgenerator.sh
+# =============================================================================
+# Description:
+# -----------------------------------------------------------------------------
+# This automation script dynamically generates backup scripts for either:
+#   1. Source Code Backups (Project directories)
+#   2. Database Backups (MySQL, PostgreSQL, MongoDB, SQLite, MSSQL)
+#
+# Based on the user's input, it interactively creates a fully functional,
+# standalone backup script in the current working directory with proper
+# logging, folder management, and optional cloud integration.
+#
+# -----------------------------------------------------------------------------
+# Key Features:
+# -----------------------------------------------------------------------------
+# ✅ Interactive CLI:
+#     - Asks the user whether to generate a *Code Backup* or *Database Backup*.
+#     - Prompts for necessary inputs such as source path, destination path,
+#       database type, and credentials.
+#
+# ✅ Supported Databases:
+#     - MySQL / MariaDB
+#     - PostgreSQL
+#     - MongoDB
+#     - SQLite
+#     - Microsoft SQL Server
+#
+# ✅ Cloud Upload Integration:
+#     - Optional integration with AWS S3, Azure Blob Storage, or Google Cloud Storage.
+#     - If selected, automatically appends respective upload commands to the
+#       generated backup script.
+#
+# ✅ Backup Storage Logic:
+#     - Backups are organized by weekday (Monday, Tuesday, …) to maintain a
+#       7-day rotation structure.
+#     - Logs are stored alongside backups for easy monitoring.
+#
+# ✅ Credentials Guidance:
+#     - Prints a sample credentials file template (.my.cnf, .pgpass, etc.)
+#       on the terminal for manual setup.
+#     - Credentials are *not* stored by the generator to ensure security.
+#
+# ✅ Safe & Reliable:
+#     - Uses `set -euo pipefail` for error handling.
+#     - Verifies required utilities (mysqldump, zip, aws, etc.) before use.
+#     - Adds colored, readable CLI outputs.
+#
+# -----------------------------------------------------------------------------
+# Output:
+# -----------------------------------------------------------------------------
+# - Generates executable backup scripts such as:
+#       backup_code_<project>.sh
+#       backup_mysql_<db>.sh
+#       backup_postgres_<db>.sh
+#
+# - Each generated script:
+#       → Creates date-based backup folders
+#       → Logs operations with timestamps
+#       → Optionally uploads backup to cloud
+#
+# -----------------------------------------------------------------------------
+# Example Usages:
+# -----------------------------------------------------------------------------
+#   1️⃣ Generate Code Backup Script:
+#       $ ./code_database_backupgenerator.sh
+#       > Do you want to create a Code backup or Database backup? (code/db): code
+#       > Enter source path of code: /var/www/project
+#       > Enter destination path: /home/ubuntu/backups/code
+#       → Output: backup_code_project.sh
+#
+#   2️⃣ Generate Database Backup Script:
+#       $ ./code_database_backupgenerator.sh
+#       > Do you want to create a Code backup or Database backup? (code/db): db
+#       > Enter database type: mysql
+#       > Enter database name: myapp_prod
+#       > Enter destination path: /home/ubuntu/backups/db
+#       → Output: backup_mysql_myapp_prod.sh
+#
+# -----------------------------------------------------------------------------
+# Notes:
+# -----------------------------------------------------------------------------
+# - Ensure the credentials files (~/.my.cnf, ~/.pgpass, etc.) exist and have
+#   correct permissions (chmod 600).
+# - Requires AWS CLI, Azure CLI, or GCloud SDK if cloud integration is enabled.
+# - Compatible with all major Linux distributions (Ubuntu, CentOS, Debian).
+#
+# =============================================================================
 
 set -euo pipefail
 
