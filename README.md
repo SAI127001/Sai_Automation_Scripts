@@ -1,23 +1,3 @@
-<!-- PROJECT BANNER -->
-
-   <p align="center">
-     <img src=
-      "https://capsule-render.vercel.app/api?type=waving&color=0:0077FF,100:00FF88&height=250&section=header&text=SAI%20Automation%20Scripts&fontSize=
-      48&fontAlignY=38&animation=fadeIn&desc=DevOps%20%26%20Operations%20Automation%20Toolkit&descAlignY=55&descAlign=50" alt="Sai Automation Scripts
-      Banner">
-     </p>
-
-     <h1 align="center">⚙️ Sai Automation Script</h1>
-
-     <p align="center">
-       <i>Professional automation scripts for DevOps Engineers.<br>
-
-Built for efficiency • Designed for reliability • Continuously evolving 🚀</i>
-
- </p>
-
----
-
  <p align="center">
  <!-- Dynamic GitHub Badges -->
  <a href="https://github.com/SAI127001/Sai_Automation_Scripts/stargazers">
@@ -32,11 +12,6 @@ Built for efficiency • Designed for reliability • Continuously evolving 🚀
 <a href="https://github.com/SAI127001/Sai_Automation_Scripts/commits/main">
 <img src="https://img.shields.io/github/last-commit/SAI127001/Sai_Automation_Scripts?style=for-the-badge&color=brightgreen" alt="Last
       Commit">
-</a>
-<a href="#">
-<img
-    src="https://img.shields.io/github/actions/workflow/status/SAI127001/Sai_Automation_Scripts/ci.yml?label=Build%20Status&style=for-the-badge&logo
-    =githubactions&logoColor=white" alt="Build Passing">
 </a>
 
  </p>
