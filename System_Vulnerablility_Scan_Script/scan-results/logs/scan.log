@@ -1,0 +1,81 @@
+[2025-10-09 17:07:49] [0;34mINFO[0m: Starting Linux vulnerability scan (ID: 20251009_170749-oss-sai)
+[2025-10-09 17:07:49] [0;34mINFO[0m: Using sudo for privileged operations
+[2025-10-09 17:07:49] [0;34mINFO[0m: Detecting Linux distribution...
+[2025-10-09 17:07:49] [0;32mSUCCESS[0m: Detected: Ubuntu 24.04.3 LTS
+[2025-10-09 17:07:49] [0;34mINFO[0m: Using package manager: apt-get
+[2025-10-09 17:07:49] [0;31mERROR[0m: Missing required tools: lynis
+[2025-10-09 17:07:49] [0;31mERROR[0m: Run with --install to install them automatically
+[2025-10-09 17:07:49] [0;31mERROR[0m: Required tools missing - aborting scan
+[2025-10-09 17:08:46] [0;34mINFO[0m: Starting Linux vulnerability scan (ID: 20251009_170846-oss-sai)
+[2025-10-09 17:08:46] [0;34mINFO[0m: Using sudo for privileged operations
+[2025-10-09 17:08:46] [0;34mINFO[0m: Detecting Linux distribution...
+[2025-10-09 17:08:46] [0;32mSUCCESS[0m: Detected: Ubuntu 24.04.3 LTS
+[2025-10-09 17:08:46] [0;34mINFO[0m: Using package manager: apt-get
+[2025-10-09 17:08:46] [0;31mERROR[0m: Missing required tools: lynis
+[2025-10-09 17:08:46] [0;31mERROR[0m: Run with --install to install them automatically
+[2025-10-09 17:08:46] [0;31mERROR[0m: Required tools missing - aborting scan
+[2025-10-09 17:08:52] [0;34mINFO[0m: Starting Linux vulnerability scan (ID: 20251009_170852-oss-sai)
+[2025-10-09 17:08:52] [0;34mINFO[0m: Using sudo for privileged operations
+[2025-10-09 17:08:52] [0;34mINFO[0m: Detecting Linux distribution...
+[2025-10-09 17:08:52] [0;32mSUCCESS[0m: Detected: Ubuntu 24.04.3 LTS
+[2025-10-09 17:08:52] [0;34mINFO[0m: Using package manager: apt-get
+[2025-10-09 17:08:52] [0;34mINFO[0m: Installing required tools...
+[2025-10-09 17:08:59] [0;34mINFO[0m: Installing: lynis
+[2025-10-09 17:09:07] [0;32mSUCCESS[0m: Installed lynis
+[2025-10-09 17:09:07] [0;34mINFO[0m: Starting scan: host_information
+[2025-10-09 17:09:07] [0;32mSUCCESS[0m: Completed host_information in 0s
+[2025-10-09 17:09:07] [0;34mINFO[0m: Starting scan: lynis_audit
+[2025-10-09 17:10:09] [0;32mSUCCESS[0m: Completed lynis_audit in 62s
+[2025-10-09 17:10:09] [0;34mINFO[0m: Starting scan: nmap_port_scan
+[2025-10-09 17:10:10] [0;32mSUCCESS[0m: Completed nmap_port_scan in 1s
+[2025-10-09 17:10:10] [0;34mINFO[0m: Starting scan: trivy_vulnerability_scan
+[2025-10-09 17:15:51] [0;32mSUCCESS[0m: Completed trivy_vulnerability_scan in 341s
+[2025-10-09 17:15:51] [0;34mINFO[0m: Starting scan: suid_sgid_check
+[2025-10-09 17:26:02] [0;34mINFO[0m: Starting Linux vulnerability scan (ID: 20251009_172602-oss-sai)
+[2025-10-09 17:26:02] [0;34mINFO[0m: Using sudo for privileged operations
+[2025-10-09 17:26:02] [0;34mINFO[0m: Detecting Linux distribution...
+[2025-10-09 17:26:02] [0;32mSUCCESS[0m: Detected: Ubuntu 24.04.3 LTS
+[2025-10-09 17:26:02] [0;34mINFO[0m: Using package manager: apt-get
+[2025-10-09 17:26:02] [0;34mINFO[0m: Starting scan: host_information
+[2025-10-09 17:26:35] [0;34mINFO[0m: Starting Linux vulnerability scan (ID: 20251009_172635-oss-sai)
+[2025-10-09 17:26:35] [0;34mINFO[0m: Using sudo for privileged operations
+[2025-10-09 17:26:35] [0;34mINFO[0m: Detecting Linux distribution...
+[2025-10-09 17:26:35] [0;32mSUCCESS[0m: Detected: Ubuntu 24.04.3 LTS
+[2025-10-09 17:26:35] [0;34mINFO[0m: Using package manager: apt-get
+[2025-10-09 17:27:05] [0;34mINFO[0m: Starting Linux vulnerability scan (ID: 20251009_172705-oss-sai)
+[2025-10-09 17:27:05] [0;34mINFO[0m: Using sudo for privileged operations
+[2025-10-09 17:27:05] [0;34mINFO[0m: Detecting Linux distribution...
+[2025-10-09 17:27:05] [0;32mSUCCESS[0m: Detected: Ubuntu 24.04.3 LTS
+[2025-10-09 17:27:05] [0;34mINFO[0m: Using package manager: apt-get
+[2025-10-09 17:36:44] [0;34mINFO[0m: Starting Linux vulnerability scan (ID: 20251009_173644-oss-sai)
+[2025-10-09 17:36:44] [0;34mINFO[0m: Using sudo for privileged operations
+[2025-10-09 17:36:44] [0;34mINFO[0m: Detecting Linux distribution...
+[2025-10-09 17:36:44] [0;32mSUCCESS[0m: Detected: Ubuntu 24.04.3 LTS
+[2025-10-09 17:36:44] [0;34mINFO[0m: Using package manager: apt-get
+[2025-10-09 17:36:55] [0;34mINFO[0m: Starting scan: host_information
+[2025-10-09 17:36:55] [0;32mSUCCESS[0m: Completed host_information in 0s
+[2025-10-09 17:36:55] [0;34mINFO[0m: Starting scan: lynis_audit
+[2025-10-09 17:38:21] [0;32mSUCCESS[0m: Completed lynis_audit in 86s
+[2025-10-09 17:38:21] [0;34mINFO[0m: Starting scan: nmap_port_scan
+[2025-10-09 17:38:22] [0;32mSUCCESS[0m: Completed nmap_port_scan in 1s
+[2025-10-09 17:38:22] [0;34mINFO[0m: Starting scan: trivy_vulnerability_scan
+[2025-10-09 17:49:11] [0;32mSUCCESS[0m: Completed trivy_vulnerability_scan in 649s
+[2025-10-09 17:49:11] [0;34mINFO[0m: Starting scan: suid_sgid_check
+[2025-10-09 17:49:53] [0;32mSUCCESS[0m: Completed suid_sgid_check in 42s
+[2025-10-09 17:49:53] [0;34mINFO[0m: Starting scan: ssh_security_check
+[2025-10-09 17:54:47] [0;34mINFO[0m: Starting Linux vulnerability scan (ID: 20251009_175447-oss-sai)
+[2025-10-09 17:54:47] [0;34mINFO[0m: Using sudo for privileged operations
+[2025-10-09 17:54:47] [0;34mINFO[0m: Detecting Linux distribution...
+[2025-10-09 17:54:47] [0;32mSUCCESS[0m: Detected: Ubuntu 24.04.3 LTS
+[2025-10-09 17:54:47] [0;34mINFO[0m: Using package manager: apt-get
+[2025-10-09 17:54:54] [0;34mINFO[0m: Starting scan: host_information
+[2025-10-09 17:54:54] [0;32mSUCCESS[0m: Completed host_information in 0s
+[2025-10-09 17:54:54] [0;34mINFO[0m: Starting scan: lynis_audit
+[2025-10-09 17:56:22] [0;32mSUCCESS[0m: Completed lynis_audit in 88s
+[2025-10-09 17:56:22] [0;34mINFO[0m: Starting scan: nmap_port_scan
+[2025-10-09 17:56:23] [0;32mSUCCESS[0m: Completed nmap_port_scan in 1s
+[2025-10-09 17:56:23] [0;34mINFO[0m: Starting scan: trivy_vulnerability_scan
+[2025-10-09 18:01:30] [0;32mSUCCESS[0m: Completed trivy_vulnerability_scan in 307s
+[2025-10-09 18:01:30] [0;34mINFO[0m: Starting scan: suid_sgid_check
+[2025-10-09 18:01:52] [0;32mSUCCESS[0m: Completed suid_sgid_check in 22s
+[2025-10-09 18:01:52] [0;34mINFO[0m: Starting scan: ssh_security_check
